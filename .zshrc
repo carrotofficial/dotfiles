@@ -1,4 +1,7 @@
 alias ll='ls -a'
-alias bi='brew install'
-alias ai='sudo apt-get install'
-alias di='sudo dnf install'
+if [$OSTYPE == darwin*]
+  alias bi='brew install'
+else
+  alias ai='sudo apt-get install'
+  alias di='sudo dnf install'
+fi
