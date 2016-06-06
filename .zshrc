@@ -1,3 +1,4 @@
+alias rm='rm -i'
 alias ll='ls -a'
 if [$OSTYPE == darwin*]
   alias bi='brew install'
